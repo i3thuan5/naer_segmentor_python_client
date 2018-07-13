@@ -11,6 +11,9 @@ install:
 - pip install tox
 script:
 - tox -e $CI_ENV
+after_success:
+- coverage report
+- coveralls
 deploy:
   provider: pypi
   user: sih4sing5hong5
