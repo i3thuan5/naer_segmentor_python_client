@@ -1,0 +1,19 @@
+sudo: false
+dist: trusty
+language: python
+python:
+- '3.5'
+env:
+  matrix:
+  - CI_ENV=tan1uan5
+script:
+- tox -e tan1uan5
+deploy:
+  provider: pypi
+  user: sih4sing5hong5
+  password:
+    secure: J6WIAsUne9Y8UgOUdaEsJBvqD6BNFIog2HPGLF/Yt8izFU6b/g6uGlwf90jFuE2i02SJtZYIEBIDZipXWnz2x7LeMabMpkRNI50gajRrThYseuIqVyovbhbfsSy6w3KObdrC2n4ansV+GFjgI4aQhNhq6UlFligwa+QCo7yE8BCI9G/2xValKyfIMKVOr4xtNCFNEUnTBrn7F/JK1oPdWFsBpBU5vTn32gxlwg80VxZNu8Iuu9zXeJjWJTUJ1F3r06cUbUUiMAH+OKhshjCKFK4RTlHrAr9gPAm7kNahXuNKNota7z3H9ZNWdF0xmX4h0hgfqQ/5Uh7XKC4Ma9MgIhoEqSLlxybyoKLJ+dfJB8uypE+3ZkYQ5BjqhenLnx4ughew3/W2+julhfBbUUUkK725F9a4J7zXrvcgjv9fAm+UwHrZGAAa1Dbg1QPp+XUxFrEPgMCvnPUOvP4Bv2fZt15CUfM2ZvM6a1Kyk9C9qivJAVvKFp4D3UdvrkTelcM36Tpd70xxzEJJNq+YbnAfWG+XcrH3qC2oCUxkQZItnFwK/ukNplkHvTgzolTCHEZfLyIn4fElZbjApf7kqt2wmDRWjZgYTJLoe4HnuAHawobeox7H1obd5/yGuQpH2ndkBELHNLK8AncFx8KAISTEYtNTXm3B4FGy6NM74fXgu6E=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: i3thuan5/naer_segmentor_python_client
