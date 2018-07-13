@@ -6,7 +6,7 @@ from setuptools import find_packages
 setup(
     name='naersegmentor',
     packages=find_packages(exclude=('test',)),
-    version='0.1.0',
+    version='0.1.1',
     author_email='ihcaoe@gmail.com',
     url='https://xn--v0qr21b.xn--kpry57d/',
     keywords=[
